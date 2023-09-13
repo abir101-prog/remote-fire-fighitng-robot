@@ -1,0 +1,9 @@
+#include<Arduinojson>
+
+
+char jsonmsg[] = "{\"name\":\"Abir\", \"age\": 23}";
+StaticJsonBuffer<300> JsonBuffer;  // memory pool
+JsonObjec& parsed = JsonBuffer.parseObject(jsonmsg); // parse msg
+
+if (!parsed.success()) {}
+const char* sensor = parsed["name"];

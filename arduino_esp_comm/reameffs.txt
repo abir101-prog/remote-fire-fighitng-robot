@@ -1,0 +1,2 @@
+test2 works.
+arduino sends a json string which esp32 sends back. the returned package is not corrupted
